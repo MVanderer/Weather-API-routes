@@ -1,0 +1,10 @@
+<div *ngIf='city'>
+  <h2>
+      {{city.name}}, {{city.sys.country}}
+  </h2>
+  <p>Humidity: {{city.main.humidity}}</p>
+  <p>Temperature(Average): {{city.main.temp}}</p>
+  <p>Temperature(Low): {{city.main.temp_min}}</p>
+  <p>Status: {{city.weather[0].main}}</p>
+  <img src="{{cityPicUrl}}" alt="{{city.name}}">
+</div>
